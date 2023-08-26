@@ -2,18 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
     background-color: rgb(251,251,251);
-}
-
-div h1{
-    margin-left: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .header{
@@ -21,9 +13,13 @@ div h1{
     display: flex;
     justify-content: space-between;
     border-bottom: 0.2px solid rgba(170,208,229,0.3);
+    height: 100px;
+    align-items: center;
+}
 
-
-    height: 80px;
+.logo{
+    margin-left: 50px;
+    width: 220px;
 }
 
 .nav{
@@ -35,6 +31,7 @@ div h1{
     gap: 25px;
     margin: 0 50px;
     height: 100%;
+    font-family:'Roboto', sans-serif;
 }
 
 li a{
@@ -57,25 +54,43 @@ li:hover{
 }
 
 main{
-    margin-top: 120px;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
 
 .drsen{
     width: 1000px;
+    grid-column: 2;
 }
 
 .home{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Roboto', sans-serif;
+    gap: 50px;
 }
 
 .slogan{
-    padding-left: 100px;
-    font-size: 40px;
+    font-size: 70px;
     text-align: end;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Roboto', sans-serif;
     font-weight: 600;
+    color: rgb(4,171,187);
+    text-transform: uppercase;
+}
+
+.p-slogan{
+    text-align: end;
+    color: rgba(239,102,122,255);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 40px;
 }
 
 .bem-estar{
@@ -93,4 +108,19 @@ main{
 .bemvindo{
     color: rgb(4,171,187);
     text-transform: uppercase;
+}
+
+footer{
+    text-align: center;
+    font-size: 20px;
+    font-family:'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.saudavel{
+    color: rgba(239,102,122,255);
+}
+
+.cuidando-de-voce{
+    color: rgb(4,171,187);
 }
