@@ -103,11 +103,40 @@ button{
     color: #04ABBB;
     font-weight: 600;
     font-size: 20px;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 button:hover{
     background-color: #04ABBB;
     color: white;
     transition-delay: 0ms;
+}
+
+.form-container{
+    position: relative;
+}
+
+i img{
+    bottom: 2px;
+    left: 6px;
+    position: absolute;
+    width: 35px;
+}
+
+.icon-password{
+    width: 30px;
+    bottom: 3px;
+}
+
+.titulo-form{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.introducao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    color: gray;
 }
