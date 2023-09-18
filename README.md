@@ -1,4 +1,6 @@
 # Bem-Estar-Campinas 
+
+
 ## Projeto da faculdade de Análise e Desenvolvimento de Sistemas, lecionado por João Cunha.
 
 **O Bem Estar Campinas** é um website que simplifica o acesso a serviços de saúde particulares por meio de uma plataforma online. Nossa missão é fornecer uma maneira conveniente e eficiente para os usuários contratarem serviços de saúde especializados, conectando-os a profissionais confiáveis na região de Campinas.
@@ -17,3 +19,14 @@
 
 ### Tecnologias Utilizadas
 * Frontend: HTML, CSS
+
+
+
+### Nome do Grupo: Bem-Estar Web
+
+### Integrantes do Grupo:
+
+* Gustavo Augusto Vieira Ferreira, 							RA 202303907222
+* Gustavo Fogaça da Silva,										  RA 202303849664
+* Evellyn Ellen da Silva,												RA 202302872409
+* Douglas Brantes Crespo, 									  	RA 202202397911
