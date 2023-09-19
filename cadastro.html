@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <style>
+        /* Estilos CSS para o formulário */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 0;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(49, 36, 36, 0.1);
+        }
+        
+        .container h2 {
+            margin-bottom: 20px;
+        }
+        
+        .container label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        
+        .container input[type="text"],
+        .container input[type="email"],
+        .container input[type="password"],
+        .container input[type="date"],
+        .container input[type="tel"],
+        .container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        /* Estilizar checkboxes e radio buttons em linha */
+        .container .checkbox-label,
+        .container .radio-label {
+            display: inline-block;
+            margin-right: 10px;
+            margin-bottom: 5px;
+        }
+
+        /* Estilizar seletores em linha */
+        .container select {
+            display: inline-block;
+            width: 50%; /* Para colocar dois seletores em uma linha */
+        }
+        
+        .container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        .container button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* Estilos para a mensagem de sucesso */
+        #sucesso-message {
+            display: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 3px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bem-Estar Campinas</h1>
+    </header>
+
+    <div class="container">
+        <!-- Formulário de Cadastro -->
+        <h2>Cadastro de Usuário</h2>
+        <form id="cadastro-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required>
+            
+            <!-- Adicione o campo de confirmação de senha -->
+            <label for="confirmar-senha">Confirmar Senha:</label>
+            <input type="password" id="confirmar-senha" required>
+            
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" id="data-nascimento" required>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" required>
+            
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" required>
+            
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone">
+            
+            <label for="genero">Gênero:</label>
+            <select id="genero">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            
+            <!-- Radio Buttons -->
+            <div>
+                <label class="radio-label">Estado Civil:</label>
+                <input type="radio" id="solteiro" name="estadoCivil" value="solteiro">
+                <label for="solteiro" class="radio-label">Solteiro (a)</label>
+                <input type="radio" id="casado" name="estadoCivil" value="casado">
+                <label for="casado" class="radio-label">Casado (a)</label>
+            </div>
+
+            <!-- Textarea -->
+            <label for="comentario">Comentário:</label>
+            <textarea id="comentario" rows="4"></textarea>
+            
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <!-- Div para exibir a mensagem de sucesso -->
+        <div id="sucesso-message">
+            <p>Seu cadastro foi concluído com sucesso!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById('cadastro-form');
+        const senha = document.getElementById('senha');
+        const confirmarSenha = document.getElementById('confirmar-senha');
+        const sucessoMessage = document.getElementById('sucesso-message');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            if (senha.value !== confirmarSenha.value) {
+                alert('As senhas não coincidem. Por favor, tente novamente.');
+                return;
+            }
+
+            // Aqui você pode adicionar a lógica de envio do formulário para o servidor
+            // e, em caso de sucesso, exibir a mensagem de sucesso e redirecionar
+            // para a página index.html
+            sucessoMessage.style.display = 'block';
+
+            // Redirecionar para index.html após 2 segundos
+            setTimeout(function () {
+                window.location.href = 'index.html';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
