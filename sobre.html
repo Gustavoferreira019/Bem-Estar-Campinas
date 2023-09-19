@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./image/bemestar.svg" type="image/x-icon">
     <title>Sobre Nós | Bem-Estar Campinas</title>
     <style>
         /* Adicione seus estilos CSS aqui */
@@ -15,28 +18,14 @@
         }
 
         header {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 0;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
+            width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            border-bottom: 0.2px solid rgba(170, 208, 229, 0.3);
+            height: 100px;
+            align-items: center;
         }
-
-        nav li {
-            margin: 0 20px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-        }
-
+        
         #sobre-nos {
             text-align: left;
             padding: 20px;
@@ -50,27 +39,35 @@
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Bem-Estar Campinas</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="cadastro.html">Cadastre-se</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="header">
+            <a href="index.html"><img src="./image/bemestar1.svg" alt="logo-bem-estar" class="logo"></a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section id="sobre-nos">
         <h2>Sobre Nós</h2>
-        <p>Somos a equipe do Bem-Estar Campinas, dedicada a promover um estilo de vida saudável e ativo para todos os nossos membros. Oferecemos uma variedade de recursos, dicas e informações para ajudar você a alcançar seus objetivos de bem-estar.</p>
-        <p>Nossa missão é inspirar e capacitar as pessoas a viverem vidas mais saudáveis e felizes, através de orientação, motivação e suporte.</p>
+        <p>Somos a equipe do Bem-Estar Campinas, dedicada a promover um estilo de vida saudável e ativo para todos os
+            nossos membros. Oferecemos uma variedade de recursos, dicas e informações para ajudar você a alcançar seus
+            objetivos de bem-estar.</p>
+        <p>Nossa missão é inspirar e capacitar as pessoas a viverem vidas mais saudáveis e felizes, através de
+            orientação, motivação e suporte.</p>
     </section>
 
     <footer>
         <p>&copy; 2023 Todos os direitos reservados.</p>
     </footer>
 </body>
+
 </html>

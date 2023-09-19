@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
 }
 
 body{
@@ -123,4 +124,129 @@ footer{
 
 .cuidando-de-voce{
     color: rgb(4,171,187);
+}
+
+.form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms{
+    background-color: #C5EFED;
+    height: 600px;
+    width: 700px;
+    margin-bottom: 105px;
+    border-radius: 10px;
+}
+
+.form-login{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-container{
+    display: grid;
+    flex-direction: column;
+}
+
+.forms input{
+    height: 40px;
+    padding-left: 50px;
+    position: relative;
+    font-size: 16px;
+    border: 2px solid #EF667A;
+}
+
+.icon .icon-perfil{
+    width:  44px;
+    position: absolute;
+    top: 390px;
+}
+
+.icon-email{
+    width: 40px;
+}
+
+.icon .icon-email{
+    position: absolute;
+    top: 460px;
+}
+
+.icon-tel{
+    width: 40px;
+}
+
+.icon .icon-tel{
+    position: absolute;
+    top: 537px;
+}
+
+.icon-senha{
+    width: 28px;
+}
+
+.icon .icon-senha{
+    position: absolute;
+    top: 612px;
+    left: 755px;
+}
+
+.bt-submit{
+    text-align: center;
+    width: 100%;
+}
+
+button{
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    border: 2px solid #04ABBB;
+    color: #04ABBB;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+button:hover{
+    background-color: #04ABBB;
+    color: white;
+    transition-delay: 0ms;
+}
+
+.form-container{
+    position: relative;
+}
+
+i img{
+    bottom: 2px;
+    left: 6px;
+    position: absolute;
+    width: 35px;
+}
+
+.icon-password{
+    width: 30px;
+    bottom: 3px;
+}
+
+.titulo-form{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.introducao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    color: gray;
+}
+
+.forms{
+    margin-top: 5%;
 }

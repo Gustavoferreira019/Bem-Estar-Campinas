@@ -5,14 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Usuário</title>
-    <link rel="stylesheet" href="./style/stylelogin.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="image/bemestar.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./image/bemestar.svg" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <img src="./image/bemestar1.svg" alt="bem-estar-campinas">
+        <div class="header">
+            <a href="index.html"><img src="./image/bemestar1.svg" alt="logo-bem-estar" class="logo"></a>
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section class="form">
@@ -20,7 +32,7 @@
                 <div class="introducao">
                     <h1 class="titulo-form">Entre em sua conta</h1>
                 </div>
-            <form action="POST">
+            <form class="form-login" action="POST">
                 <div class="form-container">
                     <label for="username">Usuário</label>
                     <input type="text" placeholder="Usuário" class="usuario">
