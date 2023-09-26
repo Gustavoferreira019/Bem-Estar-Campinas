@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+body{
+    background-color: rgb(251,251,251);
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.2px solid rgba(170,208,229,0.3);
+    height: 100px;
+    align-items: center;
+}
+
+.logo{
+    margin-left: 50px;
+    width: 220px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    margin: 0 50px;
+    height: 100%;
+    font-family:'Roboto', sans-serif;
+}
+
+li a{
+    text-decoration: none;
+    border: 1px solid;
+    padding: 13px;
+    border-radius: 15px;
+    color: #04abbb;
+}
+
+li a:hover{
+    background-color: #04abbb;
+    color: white;
+    font-weight: 600;
+    padding: 16px;
+}
+
+li:hover{
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.2px solid rgba(170, 208, 229, 0.3);
+    height: 100px;
+    align-items: center;
+}
+
+#sobre-nos {
+    text-align: left;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+}

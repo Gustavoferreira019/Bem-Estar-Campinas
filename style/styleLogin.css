@@ -32,7 +32,6 @@ body{
     gap: 25px;
     margin: 0 50px;
     height: 100%;
-    font-family:'Roboto', sans-serif;
 }
 
 li a{
@@ -52,78 +51,6 @@ li a:hover{
 
 li:hover{
     margin-bottom: 10px;
-}
-
-main{
-    margin-top: 70px;
-    margin-bottom: 50px;
-}
-
-.drsen{
-    width: 1000px;
-    grid-column: 2;
-}
-
-.home{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.text{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family:'Roboto', sans-serif;
-    gap: 50px;
-}
-
-.slogan{
-    font-size: 70px;
-    text-align: end;
-    font-family:'Roboto', sans-serif;
-    font-weight: 600;
-    color: rgb(4,171,187);
-    text-transform: uppercase;
-}
-
-.p-slogan{
-    text-align: end;
-    color: rgba(239,102,122,255);
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 40px;
-}
-
-.bem-estar{
-    margin-left: 5px;
-    color: rgb(4,171,187);
-    text-transform: uppercase;
-}
-
-.cuidando{
-    color: rgba(239,102,122,255);
-    text-transform: uppercase;
-    font-size: 35px;
-}
-
-.bemvindo{
-    color: rgb(4,171,187);
-    text-transform: uppercase;
-}
-
-footer{
-    text-align: center;
-    font-size: 20px;
-    font-family:'Roboto', sans-serif;
-    font-weight: 500;
-}
-
-.saudavel{
-    color: rgba(239,102,122,255);
-}
-
-.cuidando-de-voce{
-    color: rgb(4,171,187);
 }
 
 .form{
@@ -162,40 +89,6 @@ footer{
     border: 2px solid #EF667A;
 }
 
-.icon .icon-perfil{
-    width:  44px;
-    position: absolute;
-    top: 390px;
-}
-
-.icon-email{
-    width: 40px;
-}
-
-.icon .icon-email{
-    position: absolute;
-    top: 460px;
-}
-
-.icon-tel{
-    width: 40px;
-}
-
-.icon .icon-tel{
-    position: absolute;
-    top: 537px;
-}
-
-.icon-senha{
-    width: 28px;
-}
-
-.icon .icon-senha{
-    position: absolute;
-    top: 612px;
-    left: 755px;
-}
-
 .bt-submit{
     text-align: center;
     width: 100%;
@@ -215,7 +108,7 @@ button{
 button:hover{
     background-color: #04ABBB;
     color: white;
-    transition-delay: 0ms;
+    transition-delay: 3ms;
 }
 
 .form-container{
@@ -223,27 +116,22 @@ button:hover{
 }
 
 i img{
-    bottom: 2px;
+    bottom: 3px;
     left: 6px;
     position: absolute;
-    width: 35px;
-}
-
-.icon-password{
-    width: 30px;
-    bottom: 3px;
+    width: 33px;
 }
 
 .titulo-form{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .introducao{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 21px;
+    font-size: 20px;
     color: gray;
 }
 
