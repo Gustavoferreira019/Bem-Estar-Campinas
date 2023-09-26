@@ -153,6 +153,8 @@ li:hover{
     justify-content: top;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 8px;
     margin-top: 38px;
+    padding: 0 40px 10px 40px;
+    text-align:start;
 }
