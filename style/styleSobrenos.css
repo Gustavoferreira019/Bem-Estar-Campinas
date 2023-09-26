@@ -7,6 +7,11 @@
 
 body{
     background-color: rgb(251,251,251);
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .header{
@@ -54,14 +59,6 @@ li:hover{
     margin-bottom: 10px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
 header {
     width: 100%;
     display: flex;
@@ -71,14 +68,39 @@ header {
     align-items: center;
 }
 
-#sobre-nos {
-    text-align: left;
-    padding: 20px;
+.historia{
+    height: 863px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-footer {
+.apresentacao{
+    background-color: #C5EFED;
+    height: 600px;
+    width: 1000px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: justify;
+    padding: 30px;
+}
+
+.apresentacao h1{
     text-align: center;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 0;
+    margin-top: 10px;
+    color: #4e5050;
+}
+
+.apresentacao h2{
+    text-align: center;
+    color: #EF667A;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+.apresentacao p{
+    font-style: italic;
+    line-height: 1.2;
 }
