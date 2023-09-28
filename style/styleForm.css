@@ -1,0 +1,116 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 0.2px solid rgba(170,208,229,0.3);
+            height: 100px;
+            align-items: center;
+        }
+        
+        .logo{
+            margin-left: 50px;
+            width: 220px;
+        }
+        
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 25px;
+            margin: 0 50px;
+            height: 100%;
+            font-family:'Roboto', sans-serif;
+        }
+        
+        li a{
+            text-decoration: none;
+            border: 1px solid;
+            padding: 13px;
+            border-radius: 15px;
+            color: #04abbb;
+        }
+        
+        li a:hover{
+            background-color: #04abbb;
+            color: white;
+            font-weight: 600;
+            padding: 16px;
+        }
+        
+        li:hover{
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 80px auto;
+            padding: 25px 60px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #04abbb;
+        }
+
+        .container label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+
+        .container input[type="text"],
+        .container input[type="email"],
+        .container input[type="password"],
+        .container input[type="date"],
+        .container input[type="tel"],
+        .container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .container button {
+            background-color: #04abbb;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .container button:hover{
+            border: none;
+            background-color: #04abbb;
+            opacity: 0.8;
+            color: blanchedalmond;
+        }
+        
+        input:hover{
+            cursor: pointer;
+        }
+
+        /* Estilos para a mensagem de sucesso */
+        #sucesso-message {
+            display: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 3px;
+            margin-top: 15px;
+        }
