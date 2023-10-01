@@ -177,6 +177,188 @@ body {
     display: none;
 }
 
+@media only screen and (min-width: 768px) and (max-width:2560px){
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    body {
+        background-color: rgb(251, 251, 251);
+    }
+    
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0.2px solid rgba(170, 208, 229, 0.3);
+        height: 100px;
+        align-items: center;
+    }
+    
+    .logo {
+        margin-left: 50px;
+        width: 220px;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 25px;
+        margin: 0 50px;
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .nav li a {
+        text-decoration: none;
+        border: 1px solid;
+        padding: 13px;
+        border-radius: 15px;
+        color: #04abbb;
+    }
+    
+    .nav li a:hover {
+        background-color: #04abbb;
+        color: white;
+        font-weight: 600;
+        padding: 16px;
+    }
+    
+    .nav li:hover {
+        margin-bottom: 10px;
+    }
+    
+    .ctt {
+        display: grid;
+        background-color: #C5EFED;
+        grid-template-rows: 200px 400px;
+        grid-template-columns: repeat(3, 400px);
+        column-gap: 20px;
+        place-items: center;
+        padding: 30px;
+        border-radius: 8px;
+    
+    
+    }
+    
+    .contato {
+        height: 863px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ctt h1 {
+        text-align: center;
+        grid-row: 1;
+        grid-column: 1/4;
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #EF667A;
+    }
+    
+    .contato-email {
+        background-color: rgba(4, 171, 187, 0.3);
+        height: 300px;
+        width: 360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+        grid-row: 2;
+        grid-column: 1;
+        border-radius: 4px;
+    }
+    
+    .contato-email a {
+        text-decoration: none;
+        color: #04ABBB;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .icone-email {
+        width: 50px;
+    }
+    
+    .icone-telefone {
+        width: 50px;
+    }
+    
+    .icone-perfil {
+        width: 50px;
+    }
+    
+    .contato-telefone {
+        background-color: rgba(4, 171, 187, 0.3);
+        height: 300px;
+        width: 360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 60px;
+        grid-row: 2;
+        grid-column: 2;
+        border-radius: 4px;
+    }
+    
+    .contato-telefone a {
+        text-decoration: none;
+        color: #04ABBB;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .desenvolvedores {
+        background-color: rgba(4, 171, 187, 0.3);
+        height: 300px;
+        width: 360px;
+        grid-row: 2;
+        grid-column: 3;
+        border-radius: 4px;
+    }
+    
+    .conteudo-dev {
+        display: flex;
+        justify-content: top;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 38px;
+        padding: 0 40px 10px 40px;
+        text-align: start;
+    }
+    
+    /*Faça daqui a baixo*/
+    .mobile-menu-icon {
+        display: none;
+    }
+    
+    .ham {
+        display: none;
+        font-size: 50px;
+    }
+    
+    .mobile-menu {
+        display: none;
+    }
+    
+    .icone-fecha {
+        display: none;
+    }    
+}
+
+
 @media only screen and (min-width: 375px) and (max-width:768px) {
     body {
         height: 100vh;

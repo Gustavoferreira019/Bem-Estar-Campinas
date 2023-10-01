@@ -157,6 +157,167 @@ i img{
     display: none;
 }
 
+@media only screen and (min-width: 768px) and (max-width:2560px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto',sans-serif;
+    }
+    
+    body{
+        background-color: rgb(251,251,251);
+    }
+    
+    .header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0.2px solid rgba(170,208,229,0.3);
+        height: 100px;
+        align-items: center;
+    }
+    
+    .logo{
+        margin-left: 50px;
+        width: 220px;
+    }
+    
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap: 25px;
+        margin: 0 50px;
+        height: 100%;
+    }
+    
+    .nav li a{
+        text-decoration: none;
+        border: 1px solid;
+        padding: 13px;
+        border-radius: 15px;
+        color: #04abbb;
+    }
+    
+    .nav li a:hover{
+        background-color: #04abbb;
+        color: white;
+        font-weight: 600;
+        padding: 16px;
+    }
+    
+    .nav li:hover{
+        margin-bottom: 10px;
+    }
+    
+    .form{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .forms{
+        background-color: #C5EFED;
+        height: 600px;
+        width: 700px;
+        margin-bottom: 105px;
+        border-radius: 10px;
+    }
+    
+    .form-login{
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .form-container{
+        display: grid;
+        flex-direction: column;
+    }
+    
+    .forms input{
+        height: 40px;
+        padding-left: 50px;
+        position: relative;
+        font-size: 16px;
+        border: 2px solid #EF667A;
+    }
+    
+    .bt-submit{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .bt-Submit{
+        height: 50px;
+        width: 200px;
+        border-radius: 20px;
+        border: 2px solid #04ABBB;
+        color: #04ABBB;
+        font-weight: 600;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    
+    .bt-Submit:hover{
+        background-color: #04ABBB;
+        color: white;
+        transition-delay: 3ms;
+    }
+    
+    .form-container{
+        position: relative;
+    }
+    
+    i img{
+        bottom: 3px;
+        left: 6px;
+        position: absolute;
+        width: 33px;
+    }
+    
+    .titulo-form{
+        text-align: center;
+        margin-top: 70px;
+        color: #EF667A;
+    }
+    
+    .introducao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        color: gray;
+    }
+    
+    .forms{
+        margin-top: 5%;
+    }
+    
+    .mobile-menu-icon {
+        display: none;
+    }
+    
+    .ham {
+        display: none;
+        font-size: 50px;
+    }
+    
+    .mobile-menu {
+        display: none;
+    }
+    
+    .icone-fecha{
+        display: none;
+    }
+}
+
 @media only screen and (min-width: 375px) and (max-width:768px) {
     .nav{
         display: none;
