@@ -18,7 +18,7 @@
 4. Preencha os detalhes necessários e agende uma data e horário que se ajustem à sua agenda.
 
 ### Tecnologias Utilizadas
-* Frontend: HTML, CSS
+* Frontend: HTML, CSS, JS
 
 
 
