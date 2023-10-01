@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style/styleHome.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./image/bemestar.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
@@ -22,6 +23,18 @@
                     <li><a href="login.html">Login</a></li>
                     <li><a href="sobre.html">Sobre Nós</a></li>
                 </ul>
+                <button id="icone" class="ham" onclick="menuShow()"><img src="imageinput/menu_black_48dp.svg"
+                        alt=""></button>
+                <img src="imageinput/close_black_24dp.svg" alt="icon-fecha" class="icone-fecha" id="icone-fecha">
+                <div class="mobile-menu" id="mmobile">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -41,8 +54,11 @@
 
     </section>
     <footer>
-        <p><span class="cuidando-de-voce">Cuidando da sua saúde, para um</span> <span class="saudavel">amanhã mais saudável.</span></p>
+        <p><span class="cuidando-de-voce">Cuidando da sua saúde, para um</span> <span class="saudavel">amanhã mais
+                saudável.</span></p>
     </footer>
+
+    <script src="./script/script.js"></script>
 </body>
 
 </html>

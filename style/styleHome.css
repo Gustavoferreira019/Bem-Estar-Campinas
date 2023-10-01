@@ -1,29 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-body{
-    background-color: rgb(251,251,251);
+body {
+    background-color: rgb(251, 251, 251);
 }
 
-.header{
+.header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border-bottom: 0.2px solid rgba(170,208,229,0.3);
+    border-bottom: 0.2px solid rgba(170, 208, 229, 0.3);
     height: 100px;
     align-items: center;
 }
 
-.logo{
+.logo {
     margin-left: 50px;
     width: 220px;
 }
 
-.nav{
+.nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -32,10 +32,10 @@ body{
     gap: 25px;
     margin: 0 50px;
     height: 100%;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-li a{
+li a {
     text-decoration: none;
     border: 1px solid;
     padding: 13px;
@@ -43,85 +43,198 @@ li a{
     color: #04abbb;
 }
 
-li a:hover{
+.nav li a:hover {
     background-color: #04abbb;
     color: white;
     font-weight: 600;
     padding: 16px;
 }
 
-li:hover{
-    margin-bottom: 10px;
-}
-
-main{
+main {
     margin-top: 70px;
     margin-bottom: 50px;
 }
 
-.drsen{
+.drsen {
     width: 1000px;
     grid-column: 2;
 }
 
-.home{
+.home {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.text{
+.text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     gap: 50px;
 }
 
-.slogan{
+.slogan {
     font-size: 70px;
     text-align: end;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    color: rgb(4,171,187);
+    color: rgb(4, 171, 187);
     text-transform: uppercase;
 }
 
-.p-slogan{
+.p-slogan {
     text-align: end;
-    color: rgba(239,102,122,255);
+    color: rgba(239, 102, 122, 255);
     text-transform: uppercase;
     font-weight: 600;
     font-size: 40px;
 }
 
-.bem-estar{
+.bem-estar {
     margin-left: 5px;
-    color: rgb(4,171,187);
+    color: rgb(4, 171, 187);
     text-transform: uppercase;
 }
 
-.cuidando{
-    color: rgba(239,102,122,255);
+.cuidando {
+    color: rgba(239, 102, 122, 255);
     text-transform: uppercase;
     font-size: 35px;
 }
 
-.bemvindo{
-    color: rgb(4,171,187);
+.bemvindo {
+    color: rgb(4, 171, 187);
     text-transform: uppercase;
 }
 
-footer{
+footer {
     text-align: center;
     font-size: 20px;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
-.saudavel{
-    color: rgba(239,102,122,255);
+.saudavel {
+    color: rgba(239, 102, 122, 255);
 }
 
-.cuidando-de-voce{
-    color: rgb(4,171,187);
+.cuidando-de-voce {
+    color: rgb(4, 171, 187);
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.ham {
+    display: none;
+    font-size: 50px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.icone-fecha{
+    display: none;
+}
+
+@media only screen and (min-width: 375px) and (max-width:768px) {
+    body {
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+
+    .header {
+        height: 180px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .ham {
+        height: 20px;
+        outline: none;
+        border: 0;
+        background-color: transparent;
+        margin-right: 25px;
+        margin-bottom: 60px;
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .ham img {
+        height: 60px;
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        margin-top: -50px;
+    }
+
+    .slogan {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 25px;
+        padding: 0 8px;
+    }
+
+    .p-slogan {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .drsen {
+        width: 340px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    /*para ter o menu*/
+    .mobile-menu {
+        display: none;
+        width: 150px;
+        height: 210px;
+        padding: 15px 0;
+        position: absolute;
+        right: 1px;
+        border: 1px solid rgb(4, 171, 187);
+        background-color: rgb(251, 251, 251);
+        border-right: 0;
+        border-top: 0;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 18px;
+        margin-left: 12px;
+        padding: 1px;
+
+    }
+
+    li a {
+        border: 0px;
+    }
+
+    .ham li:hover {
+        margin-bottom: 0px;
+    }
+    .ham li a:hover {
+        background-color: white;
+        color: #04abbb;
+        padding: none;
+    }
+    /* até aqui*/
+    footer {
+        padding: 0 15px;
+    }
 }

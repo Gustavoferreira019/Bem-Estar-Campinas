@@ -22,15 +22,27 @@
                     <li><a href="login.html">Login</a></li>
                     <li><a href="sobre.html">Sobre Nós</a></li>
                 </ul>
+                <button id="icone" class="ham" onclick="menuShow()"><img src="imageinput/menu_black_48dp.svg"
+                        alt=""></button>
+                <img src="imageinput/close_black_24dp.svg" alt="icon-fecha" class="icone-fecha" id="icone-fecha">
+                <div class="mobile-menu" id="mmobile">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="cadastro.html">Cadastre-se</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
 
     <section class="form">
         <div class="forms">
-                <div class="introducao">
-                    <h1 class="titulo-form">Entre em sua conta</h1>
-                </div>
+            <div class="introducao">
+                <h1 class="titulo-form">Entre em sua conta</h1>
+            </div>
             <form class="form-login" action="POST">
                 <div class="form-container">
                     <label for="username">Usuário</label>
@@ -49,13 +61,14 @@
 
                 </div>
                 <div class="bt-submit">
-                    <button type="submit">
+                    <button class="bt-Submit" type="submit">
                         Login
                     </button>
                 </div>
             </form>
         </div>
     </section>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

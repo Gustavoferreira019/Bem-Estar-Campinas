@@ -34,7 +34,7 @@ body{
     height: 100%;
 }
 
-li a{
+.nav li a{
     text-decoration: none;
     border: 1px solid;
     padding: 13px;
@@ -42,14 +42,14 @@ li a{
     color: #04abbb;
 }
 
-li a:hover{
+.nav li a:hover{
     background-color: #04abbb;
     color: white;
     font-weight: 600;
     padding: 16px;
 }
 
-li:hover{
+.nav li:hover{
     margin-bottom: 10px;
 }
 
@@ -94,7 +94,7 @@ li:hover{
     width: 100%;
 }
 
-button{
+.bt-Submit{
     height: 50px;
     width: 200px;
     border-radius: 20px;
@@ -105,7 +105,7 @@ button{
     margin-top: 25px;
 }
 
-button:hover{
+.bt-Submit:hover{
     background-color: #04ABBB;
     color: white;
     transition-delay: 3ms;
@@ -125,6 +125,7 @@ i img{
 .titulo-form{
     text-align: center;
     margin-top: 70px;
+    color: #EF667A;
 }
 
 .introducao{
@@ -138,3 +139,92 @@ i img{
 .forms{
     margin-top: 5%;
 }
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.ham {
+    display: none;
+    font-size: 50px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.icone-fecha{
+    display: none;
+}
+
+@media only screen and (min-width: 375px) and (max-width:768px) {
+    .nav{
+        display: none;
+    }
+
+    .form{
+        height: 100vh;
+        width: 100vw;
+        background-color:#C5EFED;
+    }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+    }
+
+    .header {
+        height: 180px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .ham {
+        height: 20px;
+        outline: none;
+        border: 0;
+        background-color: transparent;
+        margin-right: 25px;
+        margin-bottom: 70px;
+        display: block;
+    }
+    .ham img {
+        height: 60px;
+    }
+
+    .mobile-menu {
+        display: none;
+        width: 150px;
+        height: 210px;
+        padding: 15px 0;
+        position: absolute;
+        right: 1px;
+        border: 1px solid rgb(4, 171, 187);
+        background-color: rgb(251, 251, 251);
+        border-right: 0;
+        border-top: 0;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 18px;
+        margin-left: 12px;
+        padding: 1px;
+
+    }
+
+    li a {
+        border: 0px;
+        text-decoration: none;
+        color: #04ABBB;
+    }
+    .ham li a:hover {
+        background-color: white;
+        color: #04abbb;
+        padding: none;
+    }
+   
+}    
