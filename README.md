@@ -30,3 +30,5 @@
 * Gustavo Fogaça da Silva,										  RA 202303849664
 * Evellyn Ellen da Silva,												RA 202302872409
 * Douglas Brantes Crespo, 									  	RA 202202397911
+
+* PROPOSTA FIGMA: https://www.figma.com/file/PUtEcElMdKLLBwzqno2ITD/BEM-ESTAR-CAMPINAS?type=design&node-id=0%3A1&mode=design&t=TsHuJLZcgVuhqKUg-1
