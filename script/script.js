@@ -23,7 +23,7 @@ toggleButton.addEventListener('click', () => {
 
 async function handleButtonClick() {
     try {
-      const response = await fetch('http://127.0.0.1:5500/register', {
+      const response = await fetch('https://gustavoferreira019.github.io/Bem-Estar-Campinas/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
