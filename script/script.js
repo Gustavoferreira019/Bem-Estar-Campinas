@@ -18,3 +18,37 @@ toggleButton.addEventListener('click', () => {
     }
 }
 )
+
+//Função para criação de Cadastro
+
+async function handleButtonClick() {
+    try {
+      const response = await fetch('sua-url-do-backend/api/paciente', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          id: randomUUID(),
+          name: firstName + ' ' + lastName,
+          email,
+          password: hashedPassword,
+          birthDate,
+          address,
+          city,
+          state,
+          phone,
+          gender,
+        }),
+      });
+  
+      if (!response.ok) {
+        throw new Error('Erro ao enviar dados para o servidor');
+      }
+  
+      const novoPaciente = await response.json();
+      console.log('Novo paciente registrado:', novoPaciente);
+    } catch (error) {
+      console.error('Erro ao processar a solicitação:', error);
+    }
+  }
