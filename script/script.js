@@ -52,3 +52,11 @@ async function handleButtonClick() {
       console.error('Erro ao processar a solicitação:', error);
     }
   }
+
+  //Pegando infos do cliente e enviando ao Backend
+
+  const registrarPaciente = document.getElementById('btnRegister')
+
+  if(registrarPaciente){
+    registrarPaciente.addEventListener('click',handleButtonClick)
+  }
