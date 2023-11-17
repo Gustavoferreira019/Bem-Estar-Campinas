@@ -23,7 +23,7 @@ toggleButton.addEventListener('click', () => {
 
 async function handleButtonClick() {
     try {
-      const response = await fetch('http://localhost:5000/register', {
+      const response = await fetch('https://bemestar-backend-a8y83feu1-gustavos-projects-1d26415b.vercel.app/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
