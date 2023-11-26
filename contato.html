@@ -1,71 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dados de Contato</title>
-    <link rel="stylesheet" href="./style/styleContato.css">
-    <link rel="shortcut icon" href="./image/bemestar.svg" type="image/x-icon">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/styleContato.css" />
+    <link rel="shortcut icon" href="./image/bemestar.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style/styleNavBar.css" />
+  </head>
 
-<body>
-    <header>
-        <div class="header">
-            <a href="index.html"><img src="./image/bemestar1.svg" alt="logo-bem-estar" class="logo"></a>
-            <nav>
-                <ul class="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="cadastro.html">Cadastre-se</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="sobre.html">Sobre Nós</a></li>
-                </ul>
-                <button id="icone" class="ham" onclick="menuShow()"><img src="imageinput/menu_black_48dp.svg"
-                        alt=""></button>
-                <img src="imageinput/close_black_24dp.svg" alt="icon-fecha" class="icone-fecha" id="icone-fecha">
-                <div class="mobile-menu" id="mmobile">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                        <li><a href="cadastro.html">Cadastre-se</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                    </ul>
-                </div>
-            </nav>
+  <body>
+    <nav class="navbar navbar-expand-lg shadow-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand w-50" href="index.html"
+          ><img class="w-25 img-logo" src="image/bemestar2.jpeg" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a
+              id="header-home-contato"
+              class="nav-link cor-primaria"
+              aria-current="page"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              id="header-contato-contato"
+              class="nav-link cor-primaria"
+              href="contato.html"
+              >Contato</a
+            >
+            <a
+              id="header-cadastro-contato"
+              class="nav-link cor-primaria"
+              href="cadastro.html"
+              >Cadastrar-se</a
+            >
+            <a
+              id="header-login-contato"
+              class="nav-link cor-primaria"
+              href="login.html"
+              >Login</a
+            >
+            <a
+              id="header-sobre-contato"
+              class="nav-link cor-primaria"
+              href="sobre.html"
+              >Sobre Nós</a
+            >
+            <a
+              id="header-cadastro-agendamento-contato"
+              class="nav-link cor-primaria"
+              href="cadastro-agendamento.html"
+              >Cadastrar agendamentos</a
+            >
+            <a
+              id="header-listar-agendamento-contato"
+              class="nav-link cor-primaria"
+              href="listar-agendamentos.html"
+              >Listar Agendamentos</a
+            >
+            <a
+            id="header-sair-agendamento"
+            class="nav-link cor-primaria"
+            href="index.html"
+            >Sair</a
+          >
+          </div>
         </div>
-    </header>
+      </div>
+    </nav>
 
     <section class="contato">
-        <div class="ctt">
-                <h1><strong>Como prefere falar conosco?</strong></h1>
-            <div class="contato-email">
-                <h2>Email</h2>
-                <i><img src="imageinput/iconemailNOVO.png" alt="Icone-Email" class="icone-email"></i>
-                <p><a href="mailto:clinica@bemestar.com.br">clinica@bemestar.com.br</a></p>
-            </div>
-            <div class="contato-telefone">
-                <h2>Telefone</h2>
-                <i><img src="imageinput/iconphoneNOVO.png" alt="Icone-Telefone" class="icone-telefone"></i>
-                <p><a href="tel:+9999999999">+99 99999999</a></p>
-            </div>
-            <div class="desenvolvedores">
-                <div class="conteudo-dev">
-                    <h2>Desenvolvedores</h2>
-                    <i><img src="imageinput/iconperfilNOVO.png" alt="Icone-Perfil" class="icone-perfil"></i>
-                    <ul>
-                        <li>Gustavo Ferreira - RA 202303907222</li>
-                        <li>Gustavo Fogaça da Silva - RA 202303849664</li>
-                        <li>Evellyn Ellen da Silva - RA 202302872409</li>
-                        <li>Douglas Brantes Crespo - RA 202202397911</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="ctt">
+        <h1><strong>Como prefere falar conosco?</strong></h1>
+        <div class="contato-email">
+          <h2>Email</h2>
+          <i
+            ><img
+              src="imageinput/iconemailNOVO.png"
+              alt="Icone-Email"
+              class="icone-email"
+          /></i>
+          <p>
+            <a href="mailto:clinica@bemestar.com.br">clinica@bemestar.com.br</a>
+          </p>
         </div>
+        <div class="contato-telefone">
+          <h2>Telefone</h2>
+          <i
+            ><img
+              src="imageinput/iconphoneNOVO.png"
+              alt="Icone-Telefone"
+              class="icone-telefone"
+          /></i>
+          <p><a href="tel:+9999999999">+99 99999999</a></p>
+        </div>
+        <div class="desenvolvedores">
+          <div class="conteudo-dev">
+            <h2>Desenvolvedores</h2>
+            <i
+              ><img
+                src="imageinput/iconperfilNOVO.png"
+                alt="Icone-Perfil"
+                class="icone-perfil"
+            /></i>
+            <ul>
+              <li>Gustavo Ferreira - RA 202303907222</li>
+              <li>Gustavo Fogaça da Silva - RA 202303849664</li>
+              <li>Evellyn Ellen da Silva - RA 202302872409</li>
+              <li>Douglas Brantes Crespo - RA 202202397911</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <script src="script/script.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script/contato.js"></script>
+  </body>
 </html>

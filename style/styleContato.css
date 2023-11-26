@@ -119,7 +119,7 @@ body {
 
 .contato-telefone {
     background-color: rgba(4, 171, 187, 0.3);
-    height: 300px;
+    height: 400px;
     width: 360px;
     display: flex;
     justify-content: center;
@@ -141,7 +141,7 @@ body {
 
 .desenvolvedores {
     background-color: rgba(4, 171, 187, 0.3);
-    height: 300px;
+    height: 400px;
     width: 360px;
     grid-row: 2;
     grid-column: 3;
@@ -265,7 +265,7 @@ body {
     
     .contato-email {
         background-color: rgba(4, 171, 187, 0.3);
-        height: 300px;
+        height: 400px;
         width: 360px;
         display: flex;
         justify-content: center;
@@ -299,7 +299,7 @@ body {
     
     .contato-telefone {
         background-color: rgba(4, 171, 187, 0.3);
-        height: 300px;
+        height: 400px;
         width: 360px;
         display: flex;
         justify-content: center;
@@ -321,7 +321,7 @@ body {
     
     .desenvolvedores {
         background-color: rgba(4, 171, 187, 0.3);
-        height: 300px;
+        height: 400px;
         width: 360px;
         grid-row: 2;
         grid-column: 3;
