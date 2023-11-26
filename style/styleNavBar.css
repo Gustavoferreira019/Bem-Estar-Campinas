@@ -1,0 +1,29 @@
+/* #NAV BAR */
+.cor-primaria{
+    color: #04abbb;
+}
+.cor-primaria:hover{
+    background-color: #04abbb;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/* NAV RESPONSIVIDADE  */
+@media only screen and (max-width: 991px) {
+
+    .img-logo{
+        width: 50%!important;
+    }
+    
+      }
+      
+    
+@media only screen and (max-width: 600px) {
+    
+    .img-logo{
+        width: 85%!important;
+    }
+    
+      }  

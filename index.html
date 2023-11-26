@@ -1,64 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem-Estar Campinas</title>
-    <link rel="stylesheet" href="./style/styleHome.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./image/bemestar.svg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-
-<body>
-    <header>
-        <div class="header">
-            <a href="index.html"><img src="./image/bemestar1.svg" alt="logo-bem-estar" class="logo"></a>
-            <nav>
-                <ul class="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="cadastro.html">Cadastre-se</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="sobre.html">Sobre Nós</a></li>
-                </ul>
-                <button id="icone" class="ham" onclick="menuShow()"><img src="imageinput/menu_black_48dp.svg"
-                        alt=""></button>
-                <img src="imageinput/close_black_24dp.svg" alt="icon-fecha" class="icone-fecha" id="icone-fecha">
-                <div class="mobile-menu" id="mmobile">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                        <li><a href="cadastro.html">Cadastre-se</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-
-        <section class="tela-principal">
-            <div class="home">
-                <div class="text">
-                    <h1 class="slogan">bem vindo à bem-estar campinas</h1>
-                    <p class="p-slogan">cuidando dos nossos entes queridos</p>
-                </div>
-                <img class="drsen" src="./image/3611349.jpg" alt="doutoresenhora">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bem-Estar Campinas</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="./style/styleHome.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+      <link rel="shortcut icon" href="./image/bemestar.svg" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="./style/styleNavBar.css">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg shadow-lg">
+         <div class="container-fluid">
+            <a class="navbar-brand w-50" href="index.html"><img class="w-25 img-logo" src="image/bemestar2.jpeg"
+               alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+               aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span id="icone" class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+               <div class="navbar-nav">
+                  <a id="header-home" class="nav-link cor-primaria" aria-current="page" href="index.html">Home</a>
+                  <a id="header-contato" class="nav-link cor-primaria" href="contato.html">Contato</a>
+                  <a id="header-cadastro" class="nav-link cor-primaria" href="cadastro.html">Cadastrar-se</a>
+                  <a id="header-login" class="nav-link cor-primaria" href="login.html">Login</a>
+                  <a id="header-sobre" class="nav-link cor-primaria" href="sobre.html">Sobre Nós</a>
+                  <a id="header-cadastro-agendamento" class="nav-link cor-primaria" href="cadastro-agendamento.html">Cadastrar agendamentos</a>
+                  <a id="header-listar-agendamento" class="nav-link cor-primaria" href="listar-agendamentos.html">Listar Agendamentos</a>
+                  <a
+                  id="header-sair-agendamento"
+                  class="nav-link cor-primaria"
+                  href="index.html"
+                  >Sair</a
+                >
+               </div>
             </div>
-        </section>
-    </main>
-
-    </section>
-    <footer>
-        <p><span class="cuidando-de-voce">Cuidando da sua saúde, para um</span> <span class="saudavel">amanhã mais
-                saudável.</span></p>
-    </footer>
-
-    <script src="./script/script.js"></script>
-</body>
-
+         </div>
+      </nav>
+      <main>
+         <section class="tela-principal">
+            <div class="home">
+               <div class="text">
+                  <h1 class="slogan">bem vindo à bem-estar campinas</h1>
+                  <p class="p-slogan">cuidando dos nossos entes queridos</p>
+               </div>
+               <img class="drsen" src="./image/3611349.jpg" alt="doutoresenhora">
+            </div>
+         </section>
+      </main>
+      </section>
+      <footer>
+         <p><span class="cuidando-de-voce">Cuidando da sua saúde, para um</span> <span class="saudavel">amanhã mais
+            saudável.</span>
+         </p>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="./script/script.js"></script>
+   </body>
 </html>

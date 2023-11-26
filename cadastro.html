@@ -1,113 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cadastro de Usuário</title>
-    <link rel="stylesheet" href="style/styleForm.css">
-    <link rel="shortcut icon" href="./image/bemestar.svg" type="image/x-icon">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/styleForm.css" />
+    <link rel="shortcut icon" href="./image/bemestar.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style/styleNavBar.css" />
+  </head>
 
-<body>
-    <header>
-        <div class="header">
-            <a href="index.html"><img src="./image/bemestar1.svg" alt="logo-bem-estar" class="logo"></a>
-            <nav>
-                <ul class="nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="cadastro.html">Cadastre-se</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="sobre.html">Sobre Nós</a></li>
-                </ul>
-                <button id="icone" class="ham" onclick="menuShow()"><img src="imageinput/menu_black_48dp.svg"
-                        alt=""></button>
-                <img src="imageinput/close_black_24dp.svg" alt="icon-fecha" class="icone-fecha" id="icone-fecha">
-                <div class="mobile-menu" id="mmobile">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                        <li><a href="cadastro.html">Cadastre-se</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="sobre.html">Sobre Nós</a></li>
-                    </ul>
-                </div>
-            </nav>
+  <body>
+    <nav class="navbar navbar-expand-lg shadow-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand w-50" href="index.html"
+          ><img class="w-25 img-logo" src="image/bemestar2.jpeg" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a
+              id="header-home-cadastro"
+              class="nav-link cor-primaria"
+              aria-current="page"
+              href="index.html"
+              >Home</a
+            >
+            <a
+              id="header-contato-cadastro"
+              class="nav-link cor-primaria"
+              href="contato.html"
+              >Contato</a
+            >
+            <a
+              id="header-cadastro-cadastro"
+              class="nav-link cor-primaria"
+              href="cadastro.html"
+              >Cadastrar-se</a
+            >
+            <a
+              id="header-login-cadastro"
+              class="nav-link cor-primaria"
+              href="login.html"
+              >Login</a
+            >
+            <a
+              id="header-sobre-cadastro"
+              class="nav-link cor-primaria"
+              href="sobre.html"
+              >Sobre Nós</a
+            >
+            <a
+              id="header-cadastro-agendamento-cadastro"
+              class="nav-link cor-primaria"
+              href="cadastro-agendamento.html"
+              >Cadastrar agendamentos</a
+            >
+            <a
+              id="header-listar-agendamento-cadastro"
+              class="nav-link cor-primaria"
+              href="listar-agendamentos.html"
+              >Listar Agendamentos</a
+            >
+            <a
+            id="header-sair-agendamento"
+            class="nav-link cor-primaria"
+            href="index.html"
+            >Sair</a
+          >
+          </div>
         </div>
-    </header>
+      </div>
+    </nav>
 
     <section class="container">
-        <h2>Cadastro de Usuário</h2>
-        <form id="cadastro-form">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" required>
+      <h2>Cadastro de Usuário</h2>
+      <form id="cadastro-form">
+        <label for="cadastro-nome">Nome:</label>
+        <input type="text" id="cadastro-nome" required />
 
-            <label for="sobrenome">Sobrenome:</label>
-            <input type="text" id="sobrenome" required>
+        <label for="cadastro-sobrenome">Sobrenome:</label>
+        <input type="text" id="cadastro-sobrenome" required />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
+        <label for="cadastro-email">Email:</label>
+        <input type="email" id="cadastro-email" required />
 
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" required>
+        <label for="cadastro-senha">Senha:</label>
+        <input type="password" id="cadastro-senha" required />
 
-            <label for="confirmar-senha">Confirmar Senha:</label>
-            <input type="password" id="confirmar-senha" required>
+        <label for="cadastro-confirmar-senha">Confirmar Senha:</label>
+        <input type="password" id="cadastro-confirmar-senha" required />
 
-            <label for="data-nascimento">Data de Nascimento:</label>
-            <input type="date" id="data-nascimento" required>
+        <label for="cadastro-data-nascimento">Data de Nascimento:</label>
+        <input type="date" id="cadastro-data-nascimento" required />
 
-            <label for="endereco">Endereço:</label>
-            <input type="text" id="endereco" required>
+        <label for="cadastro-endereco">Endereço:</label>
+        <input type="text" id="cadastro-endereco" required />
 
-            <label for="cidade">Cidade:</label>
-            <input type="text" id="cidade" required>
+        <label for="cadastro-cidade">Cidade:</label>
+        <input type="text" id="cadastro-cidade" required />
 
-            <label for="estado">Estado:</label>
-            <input type="text" id="estado" required>
+        <label for="cadastro-estado">Estado:</label>
+        <input type="text" id="cadastro-estado" required />
 
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone">
+        <label for="cadastro-celular">Celular:</label>
+        <input type="tel" id="cadastro-celular" />
 
-            <label for="genero">Gênero:</label>
-            <select id="genero">
-                <option value="masculino">Masculino</option>
-                <option value="feminino">Feminino</option>
-                <option value="outro">Outro</option>
-            </select>
+        <label for="cadastro-genero">Gênero:</label>
+        <select id="cadastro-genero">
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outro">Outro</option>
+        </select>
 
-            <button type="submit" id="btnRegister">Cadastrar</button>
-        </form>
+        <button type="submit" id="btnRegister">Cadastrar</button>
+      </form>
 
-        <div id="sucesso-message">
-            <p>Seu cadastro foi concluído com sucesso!</p>
-        </div>
+      <div id="sucesso-message">
+        <p>Seu cadastro foi concluído com sucesso!</p>
+      </div>
     </section>
 
-    <script>
-        const form = document.getElementById('cadastro-form');
-        const senha = document.getElementById('senha');
-        const confirmarSenha = document.getElementById('confirmar-senha');
-        const sucessoMessage = document.getElementById('sucesso-message');
-
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-
-            if (senha.value !== confirmarSenha.value) {
-                alert('As senhas não coincidem. Por favor, tente novamente.');
-                return;
-            }
-
-            sucessoMessage.style.display = 'block';
-
-            setTimeout(function () {
-                window.location.href = 'login.html';
-            }, 2000);
-        });
-    </script>
-
-    <script src="script/script.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script/paciente-cadastro.js"></script>
+  </body>
 </html>
