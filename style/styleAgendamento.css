@@ -1,0 +1,32 @@
+.btn-cor-primaria{
+    background-color: #04abbb;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-cor-primaria:hover{
+    background-color: #04abbb;
+    color: white;
+}
+
+
+@media only screen and (max-width: 991px) {
+    .btn-cor-primaria{
+        width: 50% !important;
+    }    
+
+    .form-agendamento{
+        width: 75% !important;
+    }
+      }
+      
+    
+@media only screen and (max-width: 600px) {
+    .btn-cor-primaria{
+        width: 100% !important;
+    }
+    
+    .form-agendamento{
+        width: 100% !important;
+    }
+      }  
